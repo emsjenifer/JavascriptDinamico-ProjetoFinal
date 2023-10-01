@@ -1,0 +1,149 @@
+body {
+    font-family: "Fira Code", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: 181C23;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 0px;
+    width: 300px;
+    padding: 0 6px 0 6px;
+    background-color: #181C23;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #181C23;
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 0;
+    height: 70px;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+}
+
+.input-group input[type="number"] {
+    width: 50px;
+    text-align: center;
+    height: 120px;
+    border: 0px;
+    background-color: #181C23;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center
+}
+.input-group input[type="number"]:focus {
+    outline: none;
+}
+
+.input-invalid {
+    color: red;
+}
+.input-valid {
+    color: white;
+}
+
+.input-group .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.input-group button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.input-group__button--small{
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background-color: white;
+    color: #181C23;
+    font-size: 34px;
+    font-weight: bold;
+    height: 30px;
+    padding: 0px;
+    margin: 10px 5px 0px 5px;
+    width: 36px;
+}
+
+.input-group__button--big{
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background-color: #181C23;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    height: 30px;
+    padding: 0px;
+    margin: 10px 5px 0px 5px;
+    width: 100%;
+}
+
+.display-hidden {
+    display: none;
+}
+
+.email-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .save-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }  
