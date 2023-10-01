@@ -1,4 +1,5 @@
-const womenInput = document.createElement("input");
-womenInput.setAttribute("id", "women");
-womenInput.setAttribute("value", "0");
-womenInput.classList.add("display-hidden");
+const womanInput = document.createElement("input");
+womanInput.setAttribute("type", "number");
+womanInput.setAttribute("id", "women");
+womanInput.setAttribute("value", "0");
+womanInput.classList.add("display-hidden");
