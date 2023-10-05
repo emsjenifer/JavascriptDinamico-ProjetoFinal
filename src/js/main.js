@@ -18,33 +18,40 @@ const app = document.querySelector("app");
 app.appendChild(temaButton);
 
 app.addEventListener(events.CALCULO_REALIZADO, (e) => {
-  console.log("RECEBIDO: " + e.detail.quantidadeDePicanha + " KG");
+  console.log("RECEBIDO: " + e.detail.quantidadeItensPorPessoa);
 });
 
 container.appendChild(calculator);
 
 calculator.appendChild(firstRow);
-firstRow.appendChild(nameInput);
-firstRow.appendChild(emailInput);
-firstRow.appendChild(cepInput);
-firstRow.appendChild(promotionCheckbox);
-firstRow.appendChild(promotionLabel);
-firstRow.appendChild(saveButton);
+firstRow.appendChild(firstInputGroup);
+
+firstInputGroup.appendChild(firstInputDiv);
+firstInputDiv.appendChild(nameInput);
+firstInputDiv.appendChild(emailInput);
+firstInputDiv.appendChild(cepInput);
+
+firstInputGroup.appendChild(promotionCheckbox);
+firstInputGroup.appendChild(promotionLabel);
+firstInputGroup.appendChild(saveButton);
 
 calculator.appendChild(secondRow);
 secondRow.appendChild(secondInputGroup);
+
 secondInputGroup.appendChild(manInput);
 secondInputGroup.appendChild(manLabel);
+secondInputGroup.appendChild(manButtonMinus);
+secondInputGroup.appendChild(manButtonPlus);
 secondInputGroup.appendChild(womanInput);
 secondInputGroup.appendChild(womanLabel);
+secondInputGroup.appendChild(womanButtonMinus);
+secondInputGroup.appendChild(womanButtonPlus);
 secondInputGroup.appendChild(childrenInput);
 secondInputGroup.appendChild(childrenLabel);
+secondInputGroup.appendChild(childrenButtonMinus);
+secondInputGroup.appendChild(childrenButtonPlus);
 
-secondInputGroup.appendChild(buttonGroup);
-buttonGroup.appendChild(buttonMinus);
-buttonGroup.appendChild(buttonPlus);
 secondInputGroup.append(buttonCalculate);
-
 calculator.appendChild(resultDisplay);
 
 app.appendChild(container);
