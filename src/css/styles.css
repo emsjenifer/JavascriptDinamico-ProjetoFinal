@@ -19,7 +19,7 @@ body {
 }
 
 .calculator {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -34,7 +34,7 @@ body {
     -moz-border-radius: 10px;
     padding: 0px;
     width: 800px;
-    height: 150px;
+    height: auto;
     padding: 0 6px 0 6px;
     background-color: #181C23;
 }
@@ -150,4 +150,21 @@ body {
   
   .save-button:hover {
     background-color: #0056b3;
-  }  
+  } 
+
+  .result-display {
+    display: none;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 0px;
+    width: 800px;
+    height: auto;
+    padding: 10px 6px 10px 6px;
+    background-color: #181C23;
+  }

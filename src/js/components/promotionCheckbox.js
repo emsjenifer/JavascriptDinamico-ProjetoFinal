@@ -1,6 +1,7 @@
 const promotionCheckbox = document.createElement("input");
 promotionCheckbox.setAttribute("type", "checkbox");
 promotionCheckbox.setAttribute("id", "promotionCheckbox");
+promotionCheckbox.setAttribute("checked", "true");
 
 const promotionLabel = document.createElement("label");
 promotionLabel.setAttribute("for", "promotionCheckbox");

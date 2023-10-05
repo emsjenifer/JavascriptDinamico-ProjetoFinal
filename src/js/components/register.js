@@ -5,6 +5,7 @@ const storedCustomer = localStorage.getItem("customer");
 window.addEventListener("load", () => {
   if (storedCustomer) {
     firstRow.remove();
+    calculator.style.display = "flex";
   }
 });
 
@@ -25,6 +26,8 @@ register.addEventListener(events.REGISTRAR, function () {
     .catch((error) => {
       console.log(error);
     });
+
+  calculator.style.display = "flex";
 
   alert("Dados salvos com sucesso!");
 });

@@ -57,8 +57,9 @@ calculator.addEventListener(events.CALCULAR, () => {
     Refrigerante: ${soda} garrafas de 2L
     Água: ${water} garrafas de 1L
     Cerveja: Adultos - ${beer} garrafas de 600ml
-    `;
+  `;
 
+  resultDisplay.style.display = "block";
   resultDisplay.innerText = `Resultados:\n${resultString}`;
 
   calculator.dispatchEvent(

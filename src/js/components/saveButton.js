@@ -5,7 +5,7 @@ saveButton.textContent = "Salvar";
 saveButton.addEventListener("click", function () {
   const nome = nameInput.value;
   const email = emailInput.value;
-  const cep = cepInput.value;
+  const cep = cepInput.value.replace("-", "");
 
   if (!nome.trim()) {
     alert("Por favor, insira seu nome.");
