@@ -1,29 +1,11 @@
 const body = document.querySelector("body");
 
 document.head.appendChild(temaNoite);
-
-temaButton.addEventListener("click", function () {
-  if (temaNoiteSelecionado) {
-    document.head.removeChild(temaNoite);
-    document.head.appendChild(temaDia);
-    temaNoiteSelecionado = false;
-  } else {
-    document.head.removeChild(temaDia);
-    document.head.appendChild(temaNoite);
-    temaNoiteSelecionado = true;
-  }
-});
-
-const app = document.querySelector("app");
 app.appendChild(temaButton);
 
-app.addEventListener(events.CALCULO_REALIZADO, (e) => {
-  console.log("RECEBIDO: " + e.detail.quantidadeItensPorPessoa);
-});
+container.appendChild(register);
 
-container.appendChild(calculator);
-
-calculator.appendChild(firstRow);
+register.appendChild(firstRow);
 firstRow.appendChild(firstInputGroup);
 
 firstInputGroup.appendChild(firstInputDiv);
@@ -35,6 +17,7 @@ firstInputGroup.appendChild(promotionCheckbox);
 firstInputGroup.appendChild(promotionLabel);
 firstInputGroup.appendChild(saveButton);
 
+container.appendChild(calculator);
 calculator.appendChild(secondRow);
 secondRow.appendChild(secondInputGroup);
 

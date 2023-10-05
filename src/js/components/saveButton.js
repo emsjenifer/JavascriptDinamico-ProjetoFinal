@@ -2,17 +2,10 @@ const saveButton = document.createElement("button");
 saveButton.setAttribute("id", "saveButton");
 saveButton.textContent = "Salvar";
 
-window.addEventListener("load", () => {
-  if (storedName && storedEmail && storedCep && storedPromotion) {
-    saveButton.remove();
-  }
-});
-
 saveButton.addEventListener("click", function () {
   const nome = nameInput.value;
   const email = emailInput.value;
   const cep = cepInput.value;
-  const promocao = promotionCheckbox.value;
 
   if (!nome.trim()) {
     alert("Por favor, insira seu nome.");
@@ -36,10 +29,7 @@ saveButton.addEventListener("click", function () {
     return;
   }
 
-  localStorage.setItem("userName", nome);
-  localStorage.setItem("userEmail", email);
-  localStorage.setItem("userCEP", cep);
-  localStorage.setItem("promotionCheckbox", promocao);
-
-  alert("Dados salvos com sucesso!");
+  saveButton.dispatchEvent(
+    new CustomEvent(events.REGISTRAR, { bubbles: true })
+  );
 });

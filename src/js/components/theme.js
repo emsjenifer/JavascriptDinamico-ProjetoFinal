@@ -16,3 +16,15 @@ temaNoite.innerHTML = `body {
     background: url(./background2.jpg); 
     background-size: cover;
 }`;
+
+temaButton.addEventListener("click", function () {
+  if (temaNoiteSelecionado) {
+    document.head.removeChild(temaNoite);
+    document.head.appendChild(temaDia);
+    temaNoiteSelecionado = false;
+  } else {
+    document.head.removeChild(temaDia);
+    document.head.appendChild(temaNoite);
+    temaNoiteSelecionado = true;
+  }
+});
